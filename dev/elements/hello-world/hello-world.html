@@ -1,6 +1,6 @@
 <link rel="import" href="/../bower_components/polymer/polymer.html">
 
-<polymer-element name="hello-world"  attributes="imagesize" noscript>
+<polymer-element name="hello-world"  attributes="imagesize">
     <template>
         <link rel="stylesheet" href="hello-world.css">
 
@@ -8,4 +8,9 @@
         <content></content>
         <img src="http://placehold.it/{{imagesize}}" />
     </template>
+    <script>
+        Polymer({
+            imagesize: '200'    
+        });
+    </script>
 </polymer-element>
