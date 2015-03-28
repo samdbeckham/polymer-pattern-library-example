@@ -7,7 +7,7 @@ module.exports = {
         tasks: ['copy:html']
     },
     elements: {
-        files: ['dev/elements/**/*.html'],
+        files: ['dev/elements/**/*.{html,css}'],
         tasks: ['copy:elements']
     },
     configFiles: {
