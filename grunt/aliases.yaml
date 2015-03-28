@@ -4,5 +4,6 @@ default:
 serve:
  - 'clean'
  - 'copy'
+ - 'sass'
  - 'connect'
  - 'watch'
