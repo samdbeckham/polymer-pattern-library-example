@@ -1,11 +1,11 @@
 <link rel="import" href="/../bower_components/polymer/polymer.html">
 
-<polymer-element name="hello-world" noscript>
+<polymer-element name="hello-world"  attributes="imagesize" noscript>
     <template>
         <link rel="stylesheet" href="hello-world.css">
 
         <h1>Hello World!</h1>
         <content></content>
-        <img src="http://data.whicdn.com/images/20787375/adventure-time-fun-Favim.com-235502_large.gif" />
+        <img src="http://placehold.it/{{imagesize}}" />
     </template>
 </polymer-element>
