@@ -14,6 +14,10 @@ module.exports = {
         files: ['dev/_elements/**/*.scss'],
         tasks: ['sass:elements']
     },
+    patterns: {
+        files: ['dev/_assets/scss/**/*.scss'],
+        tasks: ['sass:patterns']
+    },
     configFiles: {
         files: ['gruntfile.js', 'grunt/*.{js,yaml}'],
         options: {
