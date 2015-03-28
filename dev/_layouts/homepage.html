@@ -4,5 +4,6 @@ layout: base
 {{content}}
 
 {% for element in site.elements %}
+    <a href="{{ element.url }}">{{ element.title }}</a>
     {{ element.content }}
 {% endfor %}

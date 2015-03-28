@@ -1,0 +1,19 @@
+---
+layout: base
+---
+
+<div role="main">
+    <div class="wrapper">
+		<header class="pattern__component__header">
+        	<h1>{{ page.title }}</h1>
+        	{{ page.description | markdownify }}
+		</header>
+        <section class="pattern__component__example">{{ content }}</section>
+    </div>
+{% capture code %}
+{% highlight html %}
+{{ content }}
+{% endhighlight %}
+{% endcapture %}
+    {{ code | markdownify }}
+</div>
