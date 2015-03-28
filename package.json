@@ -1,0 +1,27 @@
+{
+  "name": "polymer-pattern-library-example",
+  "version": "0.0.0",
+  "description": "An example of a pattern library, made with Polymer.",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samdbeckham/polymer-pattern-library-example.git"
+  },
+  "author": "'sambeckham <sam@beckham.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samdbeckham/polymer-pattern-library-example/issues"
+  },
+  "homepage": "https://github.com/samdbeckham/polymer-pattern-library-example",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "jit-grunt": "^0.9.1",
+    "load-grunt-config": "^0.16.0"
+  }
+}
