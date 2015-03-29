@@ -1,3 +1,47 @@
+@import 'base/reset';
 @import 'base/variables';
 
 @import 'global/typography';
+@import 'global/headings';
+@import 'global/text';
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html{
+    color: #335;
+}
+
+main {
+    max-width: 72em;
+    margin: 0 auto;
+    padding: $ratio--inv#{em};
+}
+
+header {
+    background: #335;
+    color: #eee;
+    text-align: center;
+    padding: 1em 0 $ratio--inv#{em};
+    margin-bottom: $ratio--inv#{em};
+
+    a {
+        color: currentcolor;
+    }
+}
+
+img, 
+::shadow img{
+    max-width: 100%;
+    height: auto;
+}
+
+.elements {
+    list-style: none;
+    padding: $ratio--inv#{em};
+    margin: $ratio#{em} 0;
+    border-bottom: 1px solid #ccf;
+}
