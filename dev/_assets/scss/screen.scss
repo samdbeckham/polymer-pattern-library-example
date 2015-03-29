@@ -1,9 +1,13 @@
 @import 'base/reset';
 @import 'base/variables';
+@import 'base/color-scheme';
 
 @import 'global/typography';
 @import 'global/headings';
 @import 'global/text';
+
+@import 'components/code-blocks';
+@import 'components/syntax';
 
 *,
 *:before,
@@ -16,17 +20,17 @@ html{
 }
 
 main {
-    max-width: 72em;
     margin: 0 auto;
+    max-width: 72em;
     padding: $ratio--inv#{em};
 }
 
 header {
     background: #335;
     color: #eee;
-    text-align: center;
-    padding: 1em 0 $ratio--inv#{em};
     margin-bottom: $ratio--inv#{em};
+    padding: 1em 0 $ratio--inv#{em};
+    text-align: center;
 
     a {
         color: currentcolor;
@@ -35,13 +39,16 @@ header {
 
 img, 
 ::shadow img{
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
 }
 
 .elements {
     list-style: none;
-    padding: $ratio--inv#{em};
-    margin: $ratio#{em} 0;
-    border-bottom: 1px solid #ccf;
+
+    li {
+        border-bottom: 1px solid #eee;
+        margin: $ratio#{em} 0;
+        padding: $ratio--inv#{em};
+    }
 }
