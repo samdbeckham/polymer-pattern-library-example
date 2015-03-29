@@ -1,0 +1,54 @@
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/color-scheme';
+
+@import 'global/typography';
+@import 'global/headings';
+@import 'global/text';
+
+@import 'components/code-blocks';
+@import 'components/syntax';
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html{
+    color: #335;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 72em;
+    padding: $ratio--inv#{em};
+}
+
+header {
+    background: #335;
+    color: #eee;
+    margin-bottom: $ratio--inv#{em};
+    padding: 1em 0 $ratio--inv#{em};
+    text-align: center;
+
+    a {
+        color: currentcolor;
+    }
+}
+
+img, 
+::shadow img{
+    height: auto;
+    max-width: 100%;
+}
+
+.elements {
+    list-style: none;
+
+    li {
+        border-bottom: 1px solid #eee;
+        margin: $ratio#{em} 0;
+        padding: $ratio--inv#{em};
+    }
+}

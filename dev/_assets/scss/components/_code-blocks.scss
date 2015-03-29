@@ -1,0 +1,40 @@
+.highlight {
+    background-color: $color__code;
+    margin: $ratio#{em} 0;
+    position: relative;
+
+    code {
+        background-color: $color__code;
+        border: 0;
+        color: $color__white;
+        display: block;
+        margin: 0 auto;
+        max-width: 72em;
+        overflow: auto;
+        padding: $ratio#{em};
+        position: relative;
+        white-space: pre;
+        width: 100%;
+    }
+
+    &:after,
+    &:before {
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: $ratio#{em};
+        z-index: 2;
+    }
+
+    &:after {
+        background-image: linear-gradient(to right, rgba($color__code, 0), rgba($color__code, 1));
+        right: 0;
+    }
+
+    &:before {
+        background-image: linear-gradient(to left, rgba($color__code, 0), rgba($color__code, 1));
+        left: 0;
+    }
+}

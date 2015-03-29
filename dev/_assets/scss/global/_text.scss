@@ -1,0 +1,24 @@
+u,
+.text--underlined {
+    text-decoration: underline;
+}
+
+b,
+strong,
+.text--bold {
+    font-weight: bold;
+}
+
+i,
+em,
+.text--italic {
+    font-style: italic;
+}
+
+p {
+    margin-bottom: $ratio--inv#{em};
+    max-width: 38em; // https://twitter.com/TrentWalton/status/431550755611213824
+    word-spacing: .125em;
+    word-wrap: break-word;
+}
+

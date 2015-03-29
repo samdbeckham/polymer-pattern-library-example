@@ -1,4 +1,16 @@
 module.exports = {
+    patterns: {
+        options: {
+            style: 'compressed'    
+        },
+        files: [{
+            expand: true,
+            cwd: 'dev/_assets/scss/',
+            src: '*.scss',
+            dest: '.tmp/css/',
+            ext: '.css'
+        }]
+    },
     elements: {
 	options: {
             style: 'expanded',
@@ -7,7 +19,7 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: 'dev/elements/',
+            cwd: 'dev/_elements/',
             src: '*/scss/*.scss',
             dest: '.tmp/elements/',
             ext: '.css',

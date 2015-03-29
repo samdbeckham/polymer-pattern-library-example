@@ -2,8 +2,12 @@ default:
  - 'serve'
 
 serve:
- - 'clean'
- - 'copy'
- - 'sass'
+ - 'regenerate'
  - 'connect'
  - 'watch'
+
+regenerate:
+ - 'clean'
+ - 'jekyll'
+ - 'sass'
+

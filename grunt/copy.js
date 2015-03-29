@@ -14,7 +14,7 @@ module.exports = {
             dot: true,
             cwd: 'dev',
             dest: '.tmp',
-            src: 'elements/**/*.{html,css}'
+            src: '_elements/**/*.html'
         }]
     }
 };

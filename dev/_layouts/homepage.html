@@ -1,0 +1,15 @@
+---
+layout: base
+---
+{{content}}
+
+<h2>Elements</h2>
+<ul class="elements">
+    {% for element in site.elements %}
+        <li>
+            <a href="{{ element.url }}"><h3>{{ element.title }}</h3></a>
+            {{ element.description | markdownify }}
+            {{ element.content }}
+        </li>
+    {% endfor %}
+</ul>
