@@ -1,2 +1,4 @@
-<link rel="import" href="/elements/hello-world/element.html">
-<link rel="import" href="/elements/pagination/element.html">
+{% for element in site.elements %}
+    
+    <link rel="import" href="/{{ element.relative_path | replace-first:'_', '' | replace:'index', 'element' }}">
+{% endfor %}
