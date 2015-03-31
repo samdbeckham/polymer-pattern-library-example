@@ -1,4 +1,3 @@
 {% for element in site.elements %}
-    
-    <link rel="import" href="/{{ element.relative_path | replace-first:'_', '' | replace:'index', 'element' }}">
+    <link rel="import" href="/{{ element.relative_path | remove-first:'_' | replace:'index', 'element' }}">
 {% endfor %}
