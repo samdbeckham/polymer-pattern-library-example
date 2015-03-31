@@ -1,0 +1,40 @@
+<link rel="import" href="/../bower_components/polymer/polymer.html">
+
+<polymer-element name="scs-pagination" attributes="totalpages currentpage">
+    <template>
+        <link rel="stylesheet" href="hello-world.css">
+        <form method="get">
+            <div class="pagination">
+                <template if="{{ firstpage }}">
+                    <a href="#" class="pagination__paddle disabled" disabled>&lt;&nbsp;Prev</a>
+                </template>
+                <template if="{{ !firstpage }}">
+                    <a href="#" class="pagination__paddle">&lt;&nbsp;Prev</a>
+                </template>
+                <input class="pagination__page" type="text" inputmode="number" pattern="[0-9]+" max="{{ totalpages }}" value="{{ currentpage }}">
+                <span class="pagination__limit">{{ totalpages }}</span>
+                <template if="{{ lastpage }}">
+                    <a href="#" class="pagination__paddle disabled" disabled>Next&nbsp;&gt;</a>
+                </template>
+                <template if="{{ !lastpage }}">
+                    <a href="#" class="pagination__paddle">Next&nbsp;&gt;</a>
+                </template>
+            </div>
+        </form>
+    </template>
+    <script>
+        Polymer({
+            currentpage: '1',
+            totalpages: '1',
+            domReady: function() {
+                if (this.currentpage == 1) {
+                    this.firstpage = true;
+                }
+
+                if (this.currentpage == this.totalpages) {
+                    this.lastpage = true;
+                }
+            }
+        });
+    </script>
+</polymer-element>

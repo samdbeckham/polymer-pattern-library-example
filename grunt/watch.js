@@ -3,7 +3,7 @@ module.exports = {
         livereload: true
     },
     jekyll: {
-        files: ['dev/**/{*.md,index.html}', 'dev/_layouts/*.html'],
+        files: ['dev/**/{*.md,index.html}', 'dev/{_includes,_layouts}/*.html'],
         tasks: ['regenerate']
     },
     elements: {
